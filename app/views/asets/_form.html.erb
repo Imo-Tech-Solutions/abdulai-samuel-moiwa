@@ -1,67 +1,69 @@
-<%= form_with(model: aset) do |form| %>
-  <% if aset.errors.any? %>
-    <div style="color: red">
-      <h2><%= pluralize(aset.errors.count, "error") %> prohibited this aset from being saved:</h2>
+<div class="creat_assets_form">
+  <%= form_with(model: aset) do |form| %>
+    <% if aset.errors.any? %>
+      <div style="color: red">
+        <h2><%= pluralize(aset.errors.count, "error") %> prohibited this aset from being saved:</h2>
 
-      <ul>
-        <% aset.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
+        <ul>
+          <% aset.errors.each do |error| %>
+            <li><%= error.full_message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div>
+      <%= form.label :name, style: "display: block" %>
+      <%= form.text_field :name, class: "form-control" %>
+    </div>
+
+    <div>
+      <%= form.label :serial_number, style: "display: block" %>
+      <%= form.text_field :serial_number, class: "form-control" %>
+    </div>
+
+    <div>
+      <%= form.label :purchase_date, style: "display: block" %>
+      <%= form.date_field :purchase_date, class: "form-control" %>
+    </div>
+
+    <div>
+      <%= form.label :purchase_price, style: "display: block" %>
+      <%= form.text_field :purchase_price, class: "form-control" %>
+    </div>
+
+    <div>
+      <%= form.label :location, style: "display: block" %>
+      <%= form.text_field :location, class: "form-control" %>
+    </div>
+
+    <div>
+      <%= form.label :current_owner, style: "display: block" %>
+      <%= form.text_field :current_owner, class: "form-control" %>
+    </div>
+
+    <div>
+      <%= form.label :warranty_expiration_date, style: "display: block" %>
+      <%= form.date_field :warranty_expiration_date, class: "form-control" %>
+    </div>
+
+    <div>
+      <%= form.label :maintenance_history, style: "display: block" %>
+      <%= form.text_area :maintenance_history, class: "form-control" %>
+    </div>
+
+    <div>
+      <%= form.label :asset_category, style: "display: block" %>
+      <%= form.text_field :asset_category, class: "form-control" %>
+    </div>
+
+    <div>
+      <%= form.label :asset_status, style: "display: block" %>
+      <%= form.text_field :asset_status, class: "form-control" %>
+    </div>
+
+    <div>
+      <%= form.submit class: "sub_btn" %>
     </div>
   <% end %>
-
-  <div>
-    <%= form.label :name, style: "display: block" %>
-    <%= form.text_field :name %>
-  </div>
-
-  <div>
-    <%= form.label :serial_number, style: "display: block" %>
-    <%= form.text_field :serial_number %>
-  </div>
-
-  <div>
-    <%= form.label :purchase_date, style: "display: block" %>
-    <%= form.date_field :purchase_date %>
-  </div>
-
-  <div>
-    <%= form.label :purchase_price, style: "display: block" %>
-    <%= form.text_field :purchase_price %>
-  </div>
-
-  <div>
-    <%= form.label :location, style: "display: block" %>
-    <%= form.text_field :location %>
-  </div>
-
-  <div>
-    <%= form.label :current_owner, style: "display: block" %>
-    <%= form.text_field :current_owner %>
-  </div>
-
-  <div>
-    <%= form.label :warranty_expiration_date, style: "display: block" %>
-    <%= form.date_field :warranty_expiration_date %>
-  </div>
-
-  <div>
-    <%= form.label :maintenance_history, style: "display: block" %>
-    <%= form.text_area :maintenance_history %>
-  </div>
-
-  <div>
-    <%= form.label :asset_category, style: "display: block" %>
-    <%= form.text_field :asset_category %>
-  </div>
-
-  <div>
-    <%= form.label :asset_status, style: "display: block" %>
-    <%= form.text_field :asset_status %>
-  </div>
-
-  <div>
-    <%= form.submit %>
-  </div>
-<% end %>
+</Div>

@@ -13,10 +13,53 @@ body {
   width: 300px;
 }
 
-
 .qrl_card {
   width: 150px;
 }
+
+.edit_asset_txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.creat_assets_form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+
+.form-control {
+  width: 300px;
+}
+
+.sub_btn {
+  width: 300px;
+  height: 40px;
+  margin-top: 10px;
+  background-color: green;
+  border-style: none;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 800;
+}
+
+.show_back {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+}
+
+.edit_header {
+  text-align: center;
+}
+
+
+
+
+
 
 /* Large screens */
 @media (min-width: 992px) {

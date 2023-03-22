@@ -1,10 +1,12 @@
-<h1>Editing aset</h1>
+<div class="edit_asset_txt">
+  <h1 class="edit_header">Editing asset</h1>
+</ div>
 
 <%= render "form", aset: @aset %>
 
 <br>
 
-<div>
+<div class="show_back">
   <%= link_to "Show this aset", @aset %> |
   <%= link_to "Back to asets", asets_path %>
 </div>
