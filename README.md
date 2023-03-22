@@ -1,30 +1,24 @@
-# Abdulai Samuel Moiwa
-# Full Stack Developer Technical Interview Problem
+# README
 
-A large IT company needs a way to manage and track all of its assets, including computers, printers, and other equipment. As a full stack developer candidate, you have been tasked with creating an asset management system that allows the company to keep track of all of its assets.
+This README would normally document whatever steps are necessary to get the
+application up and running.
 
-The system should include all CRUD functionalities (Create, Read, Update, and Delete), as well as the ability to generate a QR code for any new item that is being added.
+Things you may want to cover:
 
-Here are some of the fields that the asset management system should capture for each asset:
+* Ruby version
 
-- Asset name
-- Serial number
-- Purchase date
-- Purchase price
-- Location
-- Current owner
-- Warranty expiration date
-- Maintenance history
-- Asset category
-- Asset status
+* System dependencies
 
-**Responsive design:** The system should be accessible and responsive, meaning that it should be usable on both desktop and mobile devices.
+* Configuration
 
-## You have the following resource at your disposal:.
+* Database creation
 
-> Your goal is to create a high-quality, well-documented, and
-> maintainable system that meets the Company's requirements and exceeds
-> their expectations. You should submit the system code, along with a
-> README file that explains how to use and test the system.
+* Database initialization
 
-# Good luck!
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
