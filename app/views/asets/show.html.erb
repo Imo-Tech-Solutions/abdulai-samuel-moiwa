@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @aset %>
+
+<div>
+  <%= link_to "Edit this aset", edit_aset_path(@aset) %> |
+  <%= link_to "Back to asets", asets_path %>
+
+  <%= button_to "Destroy this aset", @aset, method: :delete %>
+</div>

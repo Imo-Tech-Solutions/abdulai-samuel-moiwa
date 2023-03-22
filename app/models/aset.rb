@@ -1,0 +1,2 @@
+class Aset < ApplicationRecord
+end
