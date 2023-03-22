@@ -1,14 +1,19 @@
-<p style="color: green"><%= notice %></p>
 
-<h1>Asets</h1>
+<div class="assets_main_back">
 
-<div id="asets">
-  <% @asets.each do |aset| %>
-    <%= render aset %>
-    <p>
-      <%= link_to "Show this aset", aset %>
-    </p>
-  <% end %>
+  <p style="color: green"><%= notice %></p>
+
+  <h1>Asets</h1>
+
+  <div id="asets" class="main_card_background">
+    <% @asets.each do |aset| %>
+      <%= render aset %>
+      <p>
+        <%= link_to "Show this aset", aset %>
+      </p>
+    <% end %>
+
+  </div>
+
+  <%= link_to "New aset", new_aset_path %>
 </div>
-
-<%= link_to "New aset", new_aset_path %>

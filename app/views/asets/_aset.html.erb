@@ -1,4 +1,4 @@
-<div id="<%= dom_id aset %>">
+<div id="<%= dom_id aset %>" class="card">
   <p>
     <strong>Name:</strong>
     <%= aset.name %>
@@ -48,5 +48,8 @@
     <strong>Asset status:</strong>
     <%= aset.asset_status %>
   </p>
+
+  <img src="/asets/qr_codes/<%= aset.id %>.svg" alt="QR code" class="qrl_card">
+
 
 </div>

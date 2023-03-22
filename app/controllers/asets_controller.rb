@@ -22,17 +22,22 @@ class AsetsController < ApplicationController
   # POST /asets or /asets.json
   def create
     @aset = Aset.new(aset_params)
-
-    respond_to do |format|
-      if @aset.save
-        format.html { redirect_to aset_url(@aset), notice: "Aset was successfully created." }
-        format.json { render :show, status: :created, location: @aset }
-      else
-        format.html { render :new, status: :unprocessable_entity }
-        format.json { render json: @aset.errors, status: :unprocessable_entity }
-      end
+    @aset.save
+    qr = RQRCode::QRCode.new(aset_url(@aset), :size => 5, :level => :h)
+    svg = qr.as_svg(
+      offset: 0,
+      color: '000',
+      shape_rendering: 'crispEdges',
+      module_size: 6
+    )
+    directory = "#{Rails.root}/public/asets/qr_codes"
+    FileUtils.mkdir_p(directory) unless File.directory?(directory)
+    File.open("#{directory}/#{@aset.id}.svg", "w") do |file|
+      file.write(svg)
     end
+    redirect_to @aset, notice: 'Asset was successfully created.'
   end
+
 
   # PATCH/PUT /asets/1 or /asets/1.json
   def update
