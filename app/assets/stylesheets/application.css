@@ -1,8 +1,40 @@
 body {
+  background-color: rgb(133, 133, 133);
+}
+
+.header_line {
+  height: 1px;
+  width: 70%;
+  background-color: rgb(17, 17, 17);
+  align-self: center;
+}
+
+.assets_main_back {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background-color: rgb(252, 252, 252);
+}
+
+.assets_container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  gap: 15px;
+}
+
+.main_card_background {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  padding: 16px;
+  align-self: center;
+
+}
+
+.main_asset_h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 800;
+  color: #fff;
 }
 
 .card {
@@ -10,7 +42,10 @@ body {
   border-radius: 8px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
   padding: 16px;
+  margin-bottom: 0;
   width: 300px;
+  min-width: 300px;
+  max-width: 300px;
 }
 
 .qrl_card {
@@ -23,11 +58,22 @@ body {
   justify-content: center;
 }
 
+.creat_assets_form_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .creat_assets_form {
   display: flex;
   flex-direction: row;
   justify-content: center;
-
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  margin-bottom: 0;
+  width: 300px;
 }
 
 .form-control {
@@ -56,9 +102,46 @@ body {
   text-align: center;
 }
 
+.show_aset_p {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(25, 99, 209);
+  padding-top: 22px;
+  padding-bottom: 22px;
+  margin-top: 6;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
 
+.show_aset {
+  color: #fff;
+  font-weight: 800;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+}
 
+.new_asset {
+  background-color: green;
+  padding-top: 22px;
+  padding-bottom: 22px;
+  text-align: center;
+  width: 70%;
+  align-self: center;
+  margin-bottom: 30px;
+  border-radius: 8px;
 
+}
+
+.new_asset_link {
+  color: #fff;
+  font-weight: 800;
+  font-size: 30px;
+  text-decoration: none;
+}
 
 
 /* Large screens */
