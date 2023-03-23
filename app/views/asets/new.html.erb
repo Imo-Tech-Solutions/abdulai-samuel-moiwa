@@ -1,9 +1,9 @@
-<h1>New aset</h1>
+<h1 class="new_asset_text">New asset</h1>
 
 <%= render "form", aset: @aset %>
 
 <br>
 
-<div>
-  <%= link_to "Back to asets", asets_path %>
+<div class="back_btn_txt_div">
+  <%= link_to "Back to asets", asets_path, class: "back_btn_txt" %>
 </div>

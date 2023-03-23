@@ -3,8 +3,10 @@
 <%= render @aset %>
 
 <div>
-  <%= link_to "Edit this aset", edit_aset_path(@aset) %> |
-  <%= link_to "Back to asets", asets_path %>
+  <div class="edit_back_link">
+    <%= link_to "Edit this aset", edit_aset_path(@aset) %> |
+    <%= link_to "Back to assets", asets_path %>
+  </div>
 
-  <%= button_to "Destroy this aset", @aset, method: :delete %>
+  <%= button_to "Destroy this asset", @aset, method: :delete, class: "distory_asset" %>
 </div>

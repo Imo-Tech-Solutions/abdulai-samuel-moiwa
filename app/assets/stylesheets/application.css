@@ -27,7 +27,7 @@ body {
   width: 90%;
   padding: 16px;
   align-self: center;
-
+  overflow-x: scroll;
 }
 
 .main_asset_h1 {
@@ -143,6 +143,41 @@ body {
   text-decoration: none;
 }
 
+.distory_asset {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: red;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  padding-left: 60px;
+  padding-right: 60px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.edit_back_link {
+  display: flex;
+  width: 335px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+.new_asset_text {
+  text-align: center;
+}
+
+.back_btn_txt {
+  justify-self: center;
+  text-decoration: none;
+}
+
+.back_btn_txt_div {
+  display: flex;
+  justify-content: center;
+}
 
 /* Large screens */
 @media (min-width: 992px) {
