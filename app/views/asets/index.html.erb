@@ -1,0 +1,19 @@
+
+<div class="assets_main_back">
+
+  <p style="color: green"><%= notice %></p>
+
+  <h1 class="main_asset_h1">Assets</h1>
+  <div class="header_line"></div>
+
+  <div id="asets" class="main_card_background">
+    <div class="assets_container">
+      <% @asets.each do |aset| %>
+        <%= render aset %>
+      <% end %>
+    </div>
+  </div>
+  <p class="new_asset">
+    <%= link_to "New asset", new_aset_path, class: "new_asset_link" %>
+  </p>
+</div>
