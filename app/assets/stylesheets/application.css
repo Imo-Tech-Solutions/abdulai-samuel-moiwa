@@ -251,4 +251,8 @@
   .asset_card {
     width: 100%;
   }
+
+  .card {
+    width: auto;
+  }
 }
