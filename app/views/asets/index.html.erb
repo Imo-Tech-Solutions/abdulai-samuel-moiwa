@@ -1,19 +1,24 @@
-
 <div class="assets_main_back">
-
-  <p style="color: green"><%= notice %></p>
-
-  <h1 class="main_asset_h1">Assets</h1>
-  <div class="header_line"></div>
-
-  <div id="asets" class="main_card_background">
-    <div class="assets_container">
-      <% @asets.each do |aset| %>
-        <%= render aset %>
-      <% end %>
-    </div>
+  <div class="sidenav">
+    <!-- Add links to other pages in the side navigation here -->
+    <p class="new_asset">
+      <%= link_to "New asset", new_aset_path, class: "new_asset_link" %>
+    </p>
   </div>
-  <p class="new_asset">
-    <%= link_to "New asset", new_aset_path, class: "new_asset_link" %>
-  </p>
+
+  <div class="main_content">
+    <p style="color: green"><%= notice %></p>
+
+    <h1 class="main_asset_h1">Assets</h1>
+    <div class="header_line"></div>
+
+    <div id="asets" class="main_card_background">
+      <div class="assets_container">
+        <% @asets.each do |aset| %>
+          <%= render aset, class: "card"%>
+        <% end %>
+      </div>
+    </div>
+
+  </div>
 </div>
