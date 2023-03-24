@@ -57,7 +57,7 @@ information gets the data to the backend, validate and generate QRL code.
 > Key Features of Project.
 - Backend Api to fetch asset data
 - Ruby as front end.
-- Postgres database to store greetings
+- Postgres database to store asset data
 
 
 <!-- GETTING STARTED -->
@@ -107,7 +107,7 @@ To run the project, execute the following command:
 
 - GitHub: [@githubhandle](https://github.com/samuelmoiwa)
 - Twitter: [@twitterhandle](https://twitter.com/samuelmoiwa)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ing-abdulai-samue
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/ing-abdulai-samue)
 
 
 <p align="right"><a href="#readme-top">back to top</a></p>
