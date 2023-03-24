@@ -4,9 +4,9 @@
 
 <div>
   <div class="edit_back_link">
-    <%= link_to "Edit this aset", edit_aset_path(@aset) %> |
-    <%= link_to "Back to assets", asets_path %>
+    <%= link_to "Edit this aset", edit_aset_path(@aset), class: "edit_text_show" %> |
+    <%= link_to "Back to assets", asets_path, class: "edit_text_show" %>
   </div>
 
-  <%= button_to "Destroy this asset", @aset, method: :delete, class: "distory_asset" %>
+  <%= button_to "Destroy this asset", @aset, method: :delete, class: "distory_asset"  %>
 </div>
